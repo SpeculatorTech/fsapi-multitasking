@@ -3,15 +3,15 @@ from typing import Optional
 from uuid import UUID
 
 class Item(BaseModel):
-    name: str
+    taskname: str
     description: Optional[str] = None
 
-class ItemGet(BaseModel):
+class GetItem(BaseModel):
     id: UUID
-    name: str
+    taskname: str
     description: Optional[str] = None
 
-class ItemCreate(BaseModel):
+class CreateItem(BaseModel):
     id: UUID
-    name: str
+    taskname: str
     description: Optional[str] = None
